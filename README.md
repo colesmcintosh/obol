@@ -1,15 +1,8 @@
 # Obol
 
+Obol is named after the small silver coins placed with the dead to pay Charon’s toll—here it buys you live crypto prices right in your terminal.
+
 Fast, friendly Rust CLI for live crypto prices.
-
-## Why this is a good demo
-
-- Idiomatic CLI parsing with `clap`
-- Async networking with `reqwest` and `tokio`
-- Typed JSON handling with `serde`
-- Clean error handling with `thiserror`
-- Polished terminal output via `tabled` and `colored`
-- Ready for CI and publishing
 
 ## Install
 
@@ -56,11 +49,3 @@ obol ETH --history 7d
 
 * Data source is CoinGecko public API. Be mindful of rate limits.
 * History flag is reserved for a follow up that calls the market chart endpoint.
-
-## Roadmap
-
-* History charts with ASCII sparklines
-* Local cache for symbols and IDs
-* Top N movers
-* Output to CSV
-* Config file in `$XDG_CONFIG_HOME/obol/config.toml`
