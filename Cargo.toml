@@ -1,0 +1,25 @@
+[package]
+name = "obol"
+version = "0.1.0"
+edition = "2021"
+description = "A fast Rust CLI for live crypto prices with optional history"
+license = "MIT"
+repository = "https://github.com/yourname/obol"
+keywords = ["crypto", "cli", "rust", "coingecko"]
+categories = ["command-line-utilities"]
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+colored = "2"
+reqwest = { version = "0.12", features = ["json", "gzip", "brotli", "deflate", "rustls-tls"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+thiserror = "1"
+tabled = "0.16"
+humantime = "2"
+chrono = { version = "0.4", default-features = false, features = ["clock"] }
+
+[dev-dependencies]
+assert_cmd = "2"
+predicates = "3"
