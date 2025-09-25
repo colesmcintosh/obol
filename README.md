@@ -14,7 +14,7 @@ Fast, friendly Rust CLI for live crypto prices.
 ## Install
 
 ```bash
-git clone https://github.com/yourname/obol
+git clone https://github.com/colesmcintosh/obol
 cd obol
 cargo install --path .
 ```
